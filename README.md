@@ -27,12 +27,14 @@ The client ID of this app is located in `.env` file.
 
 ## Building and packaging
 
-1. (One-time) install `pkg`:
+1. (One-time) install `pkg` (see [their docs](https://github.com/vercel/pkg)).
 
 
 
-2. Build the code with
+2. Install the dependencies and then build the code
 ```bash
+  npm install
+  # ...
   npm run build
 ```
 
