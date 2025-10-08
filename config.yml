@@ -1,0 +1,17 @@
+# The source repository to take the labels from.
+from-repo: SpineEventEngine/config
+
+# The list of target repositories to sync the labels to.
+#
+# Each label in these will be updated iff its name
+# is an exact match of some label in the source repository.
+# The update includes transferring both the color and the description.
+#
+# In all other cases, the labels in these repositories remain untouched.
+#
+# Known limitation: the sync will not happen for any repos which are private forks.
+#
+to-repos:
+  - FirstOrg/firstorg.github.com
+  - SecondOrg/second-repository
+  - AndSoOnOrganization/oneMoreRepo
